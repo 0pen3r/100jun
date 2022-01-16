@@ -1,0 +1,33 @@
+//https://www.acmicpc.net/problem/1292
+2022-01-16
+
+
+//입력
+var a = parseInt(prompt())
+var b = parseInt(prompt())
+
+console.log(a+b)
+
+
+//변수
+var result = 0;
+var k = 1;
+var seq = [];
+
+//배열 제작
+for(i=1;i<101;i++){
+    for(j=0;j<i;j++){
+        seq[k] = i;
+        k++;
+    }
+}
+
+//입력1 ~ 입력2 합
+for(a;a<b;a++){
+    result = result + seq[a];
+    console.log(result)
+}
+
+
+//출력
+console.log(result)
