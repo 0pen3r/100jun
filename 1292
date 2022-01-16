@@ -16,7 +16,7 @@ var seq = [];
 
 //배열 제작
 for(i=1;i<101;i++){
-    for(j=0;j<i;j++){
+    for(j=1;j<i+1;j++){
         seq[k] = i;
         k++;
     }
