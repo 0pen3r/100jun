@@ -1,0 +1,41 @@
+
+
+
+////////######################///////////
+1. python의 경우 /를 잘못쓰면 "런타임 에러 (OverflowError)" 가 발생한다...
+
+이유는 아래와 같다
+
+"""
+python3 에서 / 연산자는 실수 결과값을 반환합니다.
+
+문제는 python이 Big Integer는 디폴트로 지원해도 BigDecimal은 따로 쓰지 않는 이상 지원하지 않는다는것입니다.
+
+>>> a / b
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OverflowError: integer division result too large for a float
+
+너무 큰 수를 분모로 할 경우 펑 터지게 되는 거죠
+
+정수 값을 반환하는 // 연산자를 쓰시면 해결됩니다.
+
+N, M = map(int, input().split())
+
+print(M//N)
+
+"""
+
+
+////////######################///////////
+
+a, b = input().split()
+
+a = int(a)
+b = int(b)
+
+print(a//b)
+print(a%b)
+
+
+////////######################///////////
